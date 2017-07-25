@@ -203,8 +203,8 @@ func (m *JobManager) handleRunRec(rec *jobfile.RunRec) {
 		common.ErrLogger.Panicln(rec.Err)
 	}
 
-	m.runLog = append(m.runLog,
-		RunLogEntry{rec.Job, rec.RunTime, rec.Succeeded, rec.NewStatus})
+	//m.runLog = append(m.runLog,
+	//	RunLogEntry{rec.Job, rec.RunTime, rec.Succeeded, rec.NewStatus})
 
 	/* NOTE: error-handler was already applied by the job, if necessary. */
 
